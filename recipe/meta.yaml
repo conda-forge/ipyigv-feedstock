@@ -10,7 +10,7 @@ source:
   sha256: 89cd60a728e115838e740b5ead0e7dd80c382cfaec8d0d06f7b458f65bb0f50c
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
@@ -30,7 +30,6 @@ requirements:
     - python >=3.0
     - ipywidgets >=7.6.0,<8.0.0
     - traittypes >=0.2.1,<0.3.0
-    - spectate
 
 test:
   imports:
