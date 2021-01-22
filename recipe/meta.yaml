@@ -1,5 +1,5 @@
 {% set name = "ipyigv" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3f26d1626a04d3af15332fb25aa6825dfafa182f3cf1377062cb3fbc6fda55c
+  sha256: dbafc76b5f92668e68c5a90c388afabf068496060f3e5005ecfbd14192f7a9c8
 
 build:
   number: 0
