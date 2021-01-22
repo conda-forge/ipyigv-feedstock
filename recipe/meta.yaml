@@ -1,5 +1,5 @@
 {% set name = "ipyigv" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 89cd60a728e115838e740b5ead0e7dd80c382cfaec8d0d06f7b458f65bb0f50c
+  sha256: f3f26d1626a04d3af15332fb25aa6825dfafa182f3cf1377062cb3fbc6fda55c
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -49,7 +49,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Jupyter wrapper for the igv.js library (representation of genomic data)'
+  summary: A Jupyter wrapper for the igv.js library (representation of genomic data)
 
 extra:
   recipe-maintainers:
