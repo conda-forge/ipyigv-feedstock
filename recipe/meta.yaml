@@ -36,12 +36,12 @@ test:
   imports:
     - ipyigv
   commands:
-    - test -f ${PREFIX}/share/jupyter/nbextensions/jupyter-ipyigv/extension.js                                       # [unix]
-    - test -f ${PREFIX}/share/jupyter/nbextensions/jupyter-ipyigv/index.js                                           # [unix]
-    - test -f ${PREFIX}/share/jupyter/labextensions/jupyter-ipyigv/package.json                                      # [unix]
-    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupyter-ipyigv\\extension.js (exit 0) else (exit 1)           # [win]
-    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupyter-ipyigv\\index.js (exit 0) else (exit 1)               # [win]
-    - if exist %PREFIX%\\share\\jupyter\\labextensions\\jupyter-ipyigv\\package.json (exit 0) else (exit 1)          # [win]
+    - test -f ${PREFIX}/share/jupyter/nbextensions/jupyter-igv/extension.js                                       # [unix]
+    - test -f ${PREFIX}/share/jupyter/nbextensions/jupyter-igv/index.js                                           # [unix]
+    - test -f ${PREFIX}/share/jupyter/labextensions/jupyter-igv/package.json                                      # [unix]
+    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupyter-igv\\extension.js (exit 0) else (exit 1)           # [win]
+    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupyter-igv\\index.js (exit 0) else (exit 1)               # [win]
+    - if exist %PREFIX%\\share\\jupyter\\labextensions\\jupyter-igv\\package.json (exit 0) else (exit 1)          # [win]
 
 
 about:
